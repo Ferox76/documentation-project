@@ -1,5 +1,34 @@
 # C++ Examples
 
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Sehr wichtig: Seiteneffekte (side effects)](#sehr-wichtig-seiteneffekte-side-effects)
+- [Summation of two Integers](#summation-of-two-integers)
+- [main with input parameters](#main-with-input-parameters)
+
+<!-- /code_chunk_output -->
+
+## Sehr wichtig: Seiteneffekte (side effects)
+
+```c++
+#include <cmath>
+#include <iostream>
+
+int main() {
+    int a = 3;
+    int b = 4;
+    // Seiteneffekte (Von links nach rechts lesen)
+    std::cout << a * --a << a * ++a << a * a++ << a * a--;
+    //           3 * 2      2 * 3      3 * 3      4 * 4
+    //             6          6          9         16
+    // 66916
+    return 0;
+}
+```
+
 ## Summation of two Integers
 
 ```c++
