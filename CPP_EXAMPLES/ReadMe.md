@@ -1,6 +1,6 @@
 # C++ Examples
 
-## Summation of 2 Integers
+## Summation of two Integers
 
 ```c++
 #include <iostream>
